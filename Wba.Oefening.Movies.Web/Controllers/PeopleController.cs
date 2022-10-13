@@ -22,7 +22,7 @@ namespace Wba.Oefening.Movies.Web.Controllers
             { 
                 Persons = _directorRepository
                 .GetDirectors()
-                .Select(d => new BasePersonViewModel 
+                .Select(d => new BaseViewModel 
                 {
                     Id = d?.Id,
                     Name = $"{d.FirstName} {d.SurName}"
@@ -63,7 +63,7 @@ namespace Wba.Oefening.Movies.Web.Controllers
             {
                 Persons = _actorRepository
                 .GetActors()
-                .Select(d => new BasePersonViewModel
+                .Select(d => new BaseViewModel
                 {
                     Id = d?.Id,
                     Name = $"{d.FirstName} {d.SurName}"

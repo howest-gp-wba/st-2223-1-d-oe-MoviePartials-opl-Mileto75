@@ -40,13 +40,13 @@ namespace Wba.Oefening.Movies.Web.Controllers
                 Image = movie?.Image,
                 Genre = movie?.Genre.Name,
                 Directors = movie.Directors.Select(d =>
-                new BasePersonViewModel
+                new BaseViewModel
                 {
                     Id = d?.Id,
                     Name = $"{d.FirstName} {d.SurName}"
                 }),
                 Actors = movie.Actors.Select(a =>
-                new BasePersonViewModel
+                new BaseViewModel
                 {
                     Id = a?.Id,
                     Name = $"{a.FirstName} {a.SurName}"

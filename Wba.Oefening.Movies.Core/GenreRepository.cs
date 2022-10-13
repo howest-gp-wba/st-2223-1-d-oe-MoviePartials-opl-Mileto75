@@ -13,9 +13,10 @@ namespace Wba.Oefening.Movies.Core
             return new Genre[] {
                 new Genre{Id=1,Name="Thriller" },
                 new Genre{Id=2,Name="Horror" },
-                new Genre{Id=3,Name="Comdey" },
+                new Genre{Id=3,Name="Comedy" },
                 new Genre{Id=4,Name="Drama" },
                 new Genre{Id=5,Name="Fantasy" },
+                new Genre{Id=6,Name="RomCom" },
             };
         }
     }

@@ -1,0 +1,18 @@
+﻿@model GenreListComponentViewModel
+
+@* genreate dropdown in bootstrap *@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Genres
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        @foreach (var genreLink in Model.MenuLinks)
+        {
+            <a class="dropdown-item" 
+               asp-controller="@genreLink.Controller"
+               asp-action="@genreLink.Action"
+               asp-route-id="@genreLink.Id"
+               >@genreLink.Name</a>
+        }
+    </div>
+</li>

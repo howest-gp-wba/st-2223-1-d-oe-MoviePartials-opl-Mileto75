@@ -2,6 +2,6 @@
 {
     public class PeopleShowPersonsViewModel
     {
-        public IEnumerable<BasePersonViewModel> Persons { get; set; }
+        public IEnumerable<BaseViewModel> Persons { get; set; }
     }
 }
