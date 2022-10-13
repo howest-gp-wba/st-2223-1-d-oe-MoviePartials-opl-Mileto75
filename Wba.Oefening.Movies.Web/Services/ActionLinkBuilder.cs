@@ -26,12 +26,6 @@ namespace Wba.Oefening.Movies.Web.Services
                     Controller = "People",
                     Action = "ShowActors",
                     Name = "Actors"
-                },
-                new ActionLink
-                {
-                    Controller = "Genre",
-                    Action = "Index",
-                    Name = "Genres"
                 }
             };
         }

@@ -1,8 +1,10 @@
-﻿
-@{
-    ViewData["Title"] = "ShowMovies";
+﻿@model GenresShowMoviesViewModel
+<h1>@Model.Genre</h1>
+@if(Model.Movies.Count() == 0)
+{ 
+    <div class="alert alert-primary" role="alert">
+        No movies in genre @Model.Genre
+    </div>
 }
-
-<h1>ShowMovies</h1>
-<p>put movies here</p>
+<partial name="_MovieListPartial" model="@Model.Movies" />
 
