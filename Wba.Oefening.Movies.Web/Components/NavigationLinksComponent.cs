@@ -13,7 +13,7 @@ namespace Wba.Oefening.Movies.Web.Components
             _actionLinkBuilder = new ActionLinkBuilder();
         }
 
-        public IViewComponentResult InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
             var navigationLinksComponentViewModel
                 = new NavigationLinksComponentViewModel

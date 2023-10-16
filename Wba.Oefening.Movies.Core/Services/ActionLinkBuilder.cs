@@ -16,6 +16,7 @@ namespace Wba.Oefening.Movies.Core.Services
                 new ActionLink{Controller="Movies", Action="Index",Name="Movies"},
                 new ActionLink{Controller="People", Action="ShowDirectors",Name="Directors"},
                 new ActionLink{Controller="People", Action="ShowActors",Name="Actors"},
+                new ActionLink{Controller="Company", Action="ShowCompanies",Name="Companies"},
             };
         }
     }
